@@ -1,0 +1,402 @@
+@media screen and (min-width: 300px) and (max-width: 600px) {
+ .button-left {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* white-space: nowrap; */
+    flex-direction: column;
+    justify-content: start;
+   }
+   .button-left h2{
+    display: flex;
+    justify-content: start;
+   }
+   .button-right{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .All-buttons{
+    flex-direction: column;
+   }
+   .button-left-two{
+    /* display: flex; */
+    flex-direction: column;
+   }
+   .create-task{
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+  }
+   /* .app{
+    max-width: 900px;
+   } */
+}
+.app {
+  max-width: 97vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  /* max-width: 800px; */
+}
+
+.user-icon {
+  border: 1px solid white;
+  padding: 0.5rem;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Placeholder for user icon styling */
+}
+.user-icon svg{
+  font-size: 25px;
+}
+.button-right{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+ }
+.containerone{
+  border: 3px solid #fff;
+  padding: 0.7rem;
+  box-shadow: 0 2px 0 #969090;
+  border-radius: 10px;
+}
+.dropdown a{
+  color: #969090;
+}
+.dropdown svg{
+  margin-left: 8px;
+  /* align-items: center;
+  display: flex;
+  justify-content: center; */
+}
+
+/* TaskForm */
+
+
+.dropdown-toggle{
+  margin: 10px;
+}
+ h2{
+  font-size: 20px;
+  margin-right: 5px;
+ }
+ .button-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+ }
+@media screen and (min-width: 600px) {
+  .button-left-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+   .All-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 787px) {
+  .button-left-two{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+   .All-buttons{
+    display: flex;
+    /* align-items: center;
+    justify-content: center;
+    justify-content: space-between; */
+  }
+  .All-buttons{
+    flex-direction: column;
+  }
+}
+.All-buttons{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+}
+
+ /* TaskForm CSS */
+
+.dropdown input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.dropdown input:focus {
+  outline: none;
+  border-color: #007bff; /* Example color for focus */
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown input[type="text"] {
+  flex: 1; /* Take remaining space */
+}
+
+.dropdown svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't interfere with input */
+  color: #ccc; /* Example color for the icon */
+}
+
+/* CSS for the modal */
+.modal-container {
+  position: fixed;
+  border-radius: 6px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  width: 50%;
+  /* padding: 5px; */
+  /* border-radius: 8px; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styles for the form fields and buttons inside the modal */
+.modal-content input,
+.modal-content button {
+  margin-bottom: 10px;
+}
+
+.modal-body{
+  background: linear-gradient(638deg, #a0a2c1, #edc2c2  96.71%);
+  padding: 5px;
+  /* border-radius: 0 0 7px 7px; */
+}
+.note{
+  padding: 5px 7px 5px 7px;
+}
+
+.note svg{
+  font-size: 25px;
+}
+
+.create-task{
+  padding: 0.3rem;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.create-task input{
+  border-radius: 6px;
+  background: none;
+  width: auto;
+  /* background: #5e7082; */
+  border: 1px solid #7a848f;
+}
+
+/* .card-head{
+  margin-top: 5px;
+} */
+
+
+ /* Tak List */
+
+ .containers {
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-top: 1rem;
+}
+
+.task-containers {
+  display: inline-flex;
+  /* border: 1px solid #fff; */
+}
+::-webkit-scrollbar{
+  width: 0px;
+  background: transparent;
+}
+
+.task-container {
+  /* border: 2px solid #ccc; */
+  background: #fff;
+  overflow-y: scroll;
+  /* overflow-x: none; */
+  border-radius: 10px;
+  /* padding: 10px 0 0 0; */
+  margin-right: 20px;
+  min-width: 300px;
+  max-width: 300px;
+  height: 600px;
+}
+
+.task-container h2{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+}
+.different{
+  /* border: 1px solid black; */
+  
+  /* margin: 5px;
+  padding: 5px; */
+}
+.different .card-head{
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #cdcdd0;
+}
+.title-priority, .assignee-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-priority button{
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 2px;
+}
+.assignee-icon{
+  margin: 5px 0 10px 0;
+}
+.assignee-icon svg{
+  font-size: 25px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.description-container {
+  overflow: scroll;
+  scrollbar-width: 100px;
+  /* text-overflow: ellipsis; */
+  display: flex;
+  flex-direction: column;
+}
+/* .description-container p{
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+} */
+
+/* .task-containers .text:nth-child(1) h2{
+  background: #969090;
+}
+.task-containers .text:nth-child(2) h2{
+  background: #ba7226;
+}
+.task-containers .text:nth-child(3) h2{
+  background: rgb(58, 199, 58);
+}
+.task-containers .text:nth-child(4) h2{
+  background: rgb(7, 7, 71);
+}
+.task-containers .text:nth-child(5) h2{
+  background: rgb(182, 102, 102);
+} */
+
+/* Dropdown */
+.containers .dropdown {
+  position: relative;
+}
+
+.containers .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.containers .dropdown-content button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.containers .dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+/* Modal */
+/* .containers .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containers .modal-content {
+  background-color: white;
+  width: 50%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.containers .modal-content button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.containers .modal-content button:hover {
+  background-color: #0056b3;
+}*/
+.options{
+  z-index: 1;
+  position: absolute;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+}
+.options button{
+  border: 1px solid #fff;
+}
